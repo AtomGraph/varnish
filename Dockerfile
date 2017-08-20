@@ -20,7 +20,7 @@ ENV VARNISH_STORAGE_FILE           /var/lib/varnish/varnish_storage.bin
 ENV VARNISH_STORAGE_SIZE           1G
 ENV VARNISH_STORAGE                "file,${VARNISH_STORAGE_FILE},${VARNISH_STORAGE_SIZE}"
 
-ADD entrypoint.sh entrypoint.sh
+COPY entrypoint.sh entrypoint.sh
 
 CMD entrypoint.sh
 
