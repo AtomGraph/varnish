@@ -22,6 +22,6 @@ ENV VARNISH_STORAGE                "file,${VARNISH_STORAGE_FILE},${VARNISH_STORA
 
 COPY entrypoint.sh entrypoint.sh
 
-CMD entrypoint.sh
+ENTRYPOINT ["/bin/sh", "entrypoint.sh"]
 
 EXPOSE $VARNISH_LISTEN_PORT
