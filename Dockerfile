@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+LABEL maintainer="martynas@atomgraph.com"
+
 RUN apt-get update -qq && \
   apt-get upgrade -yqq && \
   apt-get -yqq install varnish && \
