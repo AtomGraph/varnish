@@ -5,7 +5,8 @@ LABEL maintainer="martynas@atomgraph.com"
 RUN apt-get update -qq && \
   apt-get upgrade -yqq && \
   apt-get -yqq install varnish && \
-  apt-get -yqq clean
+  apt-get -yqq clean && \
+  apt-get -yq install gettext
 
 ENV VARNISH_LISTEN_PORT            80
 ENV VARNISH_VCL_CONF               /etc/varnish/default.vcl
