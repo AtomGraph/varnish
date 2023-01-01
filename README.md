@@ -1,6 +1,6 @@
 # varnish
 
-Docker image for Varnish 4 HTTP proxy cache: https://varnish-cache.org
+Unprivileged Docker image for Varnish 6x HTTP proxy cache: https://varnish-cache.org
 
 Supported environment variables:
 * `VARNISH_LISTEN_PORT`
@@ -15,5 +15,3 @@ Supported environment variables:
 * `VARNISH_STORAGE_FILE`
 * `VARNISH_STORAGE_SIZE`
 * `VARNISH_STORAGE`
-
-Needs to be run with `--privileged` option for some reason.
