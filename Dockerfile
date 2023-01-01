@@ -1,4 +1,4 @@
-FROM varnish:latest
+FROM varnish:6.0.11
 
 LABEL maintainer="martynas@atomgraph.com"
 
